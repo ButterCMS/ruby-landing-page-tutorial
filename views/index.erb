@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+ 
+    <!-- //nav bar -->
+    <div class="nav_container">
+      <div class="logo_container">
+        <img src="assets/logos.png" alt="" class="logoImg" />
+        <h1 class="logo">Porpi</h1>
+      </div>
+      <div class="link_container">
+        <p class="nav_links">Blog</p>
+        <p class="nav_links">About us</p>
+        <p class="nav_links">Contact</p>
+      </div>
+    </div>
+
+
+
+    <!-- // hero section -->
+
+    <div class="hero_container">
+      <div class="hero_content">
+        <h1>  <%= data['porpi_hero_component']['hero_title'] %></h1>
+        <p>
+        <%= data['porpi_hero_component']['hero_subtitle'] %>
+       </p>
+      </div>
+      <div class="img_container">
+        <img  class="hero_img" src=<%= data['porpi_hero_component']['hero_img'] %> />
+      </div>
+    </div>
+
+
+
+    <!-- Tranform section -->
+
+    <h2> Transform your dogs life</h2>
+    <div class="feature_container">
+
+    <% data['transform_dog_component'].each do |item|%>
+      <div class="features_box">
+      <div class="feature_avatar avatar_1">
+        <img src=<%= item['transform_img']%>
+        />
+      </div>
+      <h3 class="features_title"><%= item['transform_header']%></h3>
+      <p><%= item['transform_subtitle']%></p>
+    </div>
+
+    <% end %>
+   
+    </div>
+
+    <!-- Care -->
+
+    <div class="care_section">
+    <h2> Connect with your Porpi </h2>
+
+    <% data['connect_porpi_component'].each do |item|%>
+      <div class="care_container">
+      <div class="care_content">
+        <h2><%= item['connect_header']%></h2>
+        <p>
+        <%= item['connect_subtitle']%>
+        </p>
+      </div>
+      <div class="img_container">
+        <img src=<%= item['connect_image']%> class="care_img" />
+      </div>
+    </div>
+    <% end %>
+    </div>
+
+    <footer>
+      <div>
+        <div class="logo_container">
+          <img src="assets/logos.png" alt="" class="logoImg" />
+          <h1 class="logo">Porpi</h1>
+        </div>
+        <p>© 2023 All rights reserved.</p>
+      </div>
+
+      <div>
+        <p class="footer_header">Porpi</p>
+        <p><a>Home</a></p>
+        <p><a>Blog</a></p>
+      </div>
+
+      <div>
+        <p class="footer_header">Company</p>
+        <p><a>About us</a></p>
+        <p><a>Contact</a></p>
+      </div>
+
+      <div>
+        <p class="footer_header">Legal</p>
+        <p><a>Terms of Use</a></p>
+        <p><a>Privacy Policy</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+
+    # end

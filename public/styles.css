@@ -1,0 +1,146 @@
+body {
+  font-family: "Golos Text", sans-serif;
+  margin: 0 4rem;
+}
+
+a {
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+.logoImg {
+  width: 50px;
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+}
+
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.link_container {
+  display: flex;
+  align-items: center;
+}
+
+.nav_links {
+  margin-left: 30px;
+}
+
+/* hero section */
+
+.hero_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_content h1 {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.hero_content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-decoration: none;
+  color: rgb(116, 116, 118);
+}
+.img_container {
+  text-align: end;
+  margin-left: 15px;
+}
+.hero_img {
+  width: 600px;
+  border-radius: 5px;
+}
+
+/* feeatures */
+
+.feature_container {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.features_box {
+  margin-right: 30px;
+}
+
+.feature_avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature_avatar img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.avatar_1 {
+  background-color: #ffbd2e;
+}
+
+/* care */
+
+.care_section {
+  margin: 3rem 0;
+}
+
+.care_container {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.care_content h1 {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.care_content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-decoration: none;
+  color: rgb(116, 116, 118);
+}
+
+.care_img {
+  width: 400px;
+  border-radius: 25px;
+}
+/* footer */
+
+footer h3 {
+  margin: 5px 0;
+  width: fit-content;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  align-items: center;
+}
+
+.footer_header {
+  color: grey;
+}
